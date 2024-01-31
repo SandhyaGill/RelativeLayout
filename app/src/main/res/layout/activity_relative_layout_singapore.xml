@@ -24,14 +24,13 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:id="@+id/ivStar"
-        android:src="@drawable/baseline_star_24"
-        app:shapeAppearanceOverlay="@style/circleImageView"
+        android:src="@drawable/baseline_stars_24"
         android:scaleType="centerCrop"
-        android:tint="@color/white"
-        android:background="@color/blue"
+        android:tint="@color/blue"
         android:layout_below="@id/ivImage"
-        android:layout_toRightOf="@id/tvSingapore"
-        android:scrollbarSize="30sp"/>
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="-30dp"/>
 
     <TextView
         android:layout_width="310dp"
@@ -81,6 +80,7 @@
         android:id="@+id/etAboutSingapore"
         android:layout_width="match_parent"
         android:layout_height="320dp"
+        android:gravity="top"
         android:layout_below="@id/tvSetting"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
@@ -95,16 +95,20 @@
         android:text="Discard"
         android:textSize="20dp"
         android:layout_below="@id/etAboutSingapore"
+        android:layout_toLeftOf="@id/btnUpload"
         android:layout_margin="10dp"/>
 
     <Button
+        android:id="@+id/btnUpload"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnUpload"
-        android:text="Upload"
-        android:textSize="20dp"
         android:layout_below="@id/etAboutSingapore"
-        android:layout_toRightOf="@id/btnDiscard"
-        android:layout_margin="10dp"/>
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:text="Upload"
+        android:textSize="20dp" />
 
 </RelativeLayout>
